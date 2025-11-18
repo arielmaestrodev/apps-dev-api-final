@@ -14,10 +14,10 @@ Neon DB Format: `COPY THE CONNECTION STRING FROM NEON.com`
 
 
 # QUICK START
-`update file: .env.example to .env then fill out the variables`
-`npm run db:generate`
-`npm run db:migrate`
-`npm run dev`
+- `update file: .env.example to .env then fill out the variables`
+- `npm run db:generate`
+- `npm run db:migrate`
+- `npm run dev`
 
 
 # FEATURES
