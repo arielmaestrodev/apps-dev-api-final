@@ -23,3 +23,4 @@
 - Authentication Middleware: Validate Access Token and Refresh Token System
 - Role Middleware: Require API Endpoint for a certain restrictions
 - Product CRUD with User Tied and Role
+- OAuth (Signin using GitHub/Google)
