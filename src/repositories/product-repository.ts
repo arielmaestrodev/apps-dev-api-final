@@ -9,8 +9,21 @@ export class ProductRepository {
     return await prisma.product.findMany({ where: { userId }, orderBy: { name: "asc" } });
   }
 
+  // Get All Active Products with User Details
   async findAllActive() {
-    return await prisma.product.findMany({ where: { isActive: true }, orderBy: { name: "asc" } });
+    return await prisma.product.findMany({ 
+      where: { isActive: true }, 
+      orderBy: { name: "asc" },
+      include: {
+        user: {
+          select: {
+            id: true,
+            name: true,
+            email: true
+          }
+        }
+      }
+    });
   }
 
   async create(data: ProductData) {
